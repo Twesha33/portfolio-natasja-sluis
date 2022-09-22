@@ -3,3 +3,43 @@ font-family: 'Spline Sans Mono', monospace; */
 
 /* primary color: #efceaa;
 secondary color: #fff2c5; */
+
+:root {
+  --background-color-1: #efceaa;
+  --background-color-2: #fff2c5;
+  --heading-font-family: "Source Code Pro", monospace;
+  --paragraph-font-family: "Spline Sans Mono", monospace;
+}
+
+body {
+  margin: 10px;
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  margin-top: 200px;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: var(--paragraph-font-family);
+}
+
+.background-square-1 {
+  background-color: var(--background-color-1);
+}
+
+.background-square-2 {
+  background-color: var(--background-color-2);
+}
+
+.social-media-icon {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-media-icon:hover {
+  cursor: pointer;
+  color: var(--background-color-2);
+}
