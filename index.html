@@ -28,9 +28,13 @@
     ></script>
 
     <title>Homepage - Natasja Sluis</title>
+    <meta
+      name="description"
+      content="Homepage of Natasja Sluis, a front-end developer."
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg app-navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Natasja Sluis</a>
         <button
@@ -47,15 +51,27 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about.html">About me</a>
-            <a class="nav-link" href="/projects.html">Projects</a>
-            <a class="nav-link" href="/contact.html">Contact me</a>
+            <a class="nav-link" href="/about.html" title="about Natasja Sluis"
+              >About me</a
+            >
+            <a
+              class="nav-link"
+              href="/projects.html"
+              title="projects by Natasja Sluis"
+              >Projects</a
+            >
+            <a
+              class="nav-link"
+              href="/contact.html"
+              title="contact Natasja Sluis"
+              >Contact me</a
+            >
           </div>
         </div>
       </div>
     </nav>
     <div class="container-fluid">
-      <div class="row background-square-1">
+      <div class="row background-1">
         <div class="row">
           <div class="col-sm-3"></div>
           <div class="col-sm-6 text-center">
@@ -63,6 +79,7 @@
           </div>
           <div class="col-sm-3"></div>
         </div>
+
         <div class="row">
           <div class="col-sm-12 text-center">
             <h2>Front-end Developer</h2>
@@ -70,43 +87,50 @@
         </div>
       </div>
 
-      <div class="row text-center m-5">
-        <div class="col-md-6 background-square-2 p-5">
-          <h3>Vanilla javascript app</h3>
-          <a
-            href="https://inspiring-treacle-301a95.netlify.app/"
-            target="_blank"
-            class="btn-projects"
-            >Click here</a
+      <div class="container-lg">
+        <div class="row text-center m-2 g-md-5">
+          <div
+            class="col-md-6 background-2 p-5 project-description d-none d-md-inline"
           >
-        </div>
-        <div class="col-md-6 p-5">
-          <img
-            src="/images/weather app.png"
-            alt="vanilla javascript weather app"
-            class="img-fluid weather-app-img"
-          />
-        </div>
-      </div>
-
-      <footer>
-        <div class="row background-square-1 text-end">
-          <div class="col-sm-12">
+            <div class="project-description-content">
+              <h3>Vanilla javascript app</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
             <a
-              href="https://www.linkedin.com/in/natasja-sluis-groenewold-73aaa1104/"
+              href="https://inspiring-treacle-301a95.netlify.app/"
               target="_blank"
-              class="social-media-icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://github.com/Twesha33?tab=repositories"
-              target="_blank"
-              class="social-media-icon"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+              class="card p-4 project-card"
+              title="vannilla javascript weather app by Natasja Sluis"
+            >
+              <img
+                src="/images/weather app.png"
+                alt="vanilla javascript weather app"
+                class="img-fluid"
+              />
+              <div class="card-body d-md-none">
+                <h3>Vanilla javascript weather app</h3>
+              </div>
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
+    <footer class="app-footer background-1 text-end p-1">
+      <a
+        href="https://www.linkedin.com/in/natasja-sluis-groenewold-73aaa1104/"
+        target="_blank"
+        class="social-media-icon"
+        title="LinkedIn page of Natasja Sluis"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a
+        href="https://github.com/Twesha33?tab=repositories"
+        target="_blank"
+        class="social-media-icon"
+        title="GitHub profile of Natasja Sluis"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
   </body>
 </html>
