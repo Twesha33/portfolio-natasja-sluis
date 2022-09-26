@@ -14,15 +14,21 @@ body {
 h1 {
   font-family: var(--heading-font-family);
   font-size: 5rem;
-  padding: 30px;
+  padding: 10px;
 }
 
 h2 {
   font-family: var(--paragraph-font-family);
   padding: 10px;
+  font-size: 3.5rem;
 }
 
-h3 {
+p {
+  font-size: 1.25rem;
+  font-family: var(--paragraph-font-family);
+}
+
+.project-titel {
   font-family: var(--heading-font-family);
   font-size: 2rem;
 }
@@ -91,13 +97,69 @@ h3 {
   width: 100%;
 }
 
+.link-freepik {
+  color: black;
+  text-decoration: none;
+}
+
+.link-freepik:hover {
+  color: var(--primary-color);
+}
+
+.techniques {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 @media (max-width: 576px) {
-  h1 {
+  .coder-header-index {
     font-size: 3rem;
     text-align: left;
   }
 
+  .sub-titel-index {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .project-titel,
   h3 {
     font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .header-about,
+  h1 {
+    font-size: 3rem;
+  }
+
+  .coder-about,
+  h2 {
+    font-size: 2rem;
+  }
+
+  .sub-titel-about,
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .hello-about-me,
+  h3 {
+    margin-top: 20px;
+  }
+
+  .link-freepik {
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .hello-about-me,
+  h3 {
+    margin-top: 30px;
   }
 }
