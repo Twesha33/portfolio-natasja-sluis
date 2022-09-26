@@ -133,7 +133,7 @@ p {
   }
 
   .header-about,
-  h1 {
+  .header-projects h1 {
     font-size: 3rem;
   }
 
